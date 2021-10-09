@@ -1,0 +1,56 @@
+=======================================================
+LINUX BASIC COMMANDS
+=======================================================
+whoami		 : Provide user information
+sudo -i		 : Allow you to raise privilage as root
+pwd		 : Print working Diectory
+ls		 : Display files & folder 
+ls -la		 : Display (l-file/folder properties) (a-Hidden files/folders)
+man <cmd>	 : Display documentation of the command <cmd> Example: "man ls"
+<cmd> --help	 : Display command arguments options Example: "ls --help"
+cd ~		 : Switch to root directory
+cd - 		 : Switch to previous diretory
+cd ..		 : Swithc to one level up in directory structure.
+mkdir 		 : Create directory
+mkdir -p <x/y/z> : Create nested directory as x/y/z
+ls -R x		 : Recyrsive lookup of directory x
+vi/vim		 : Create new file or edit existing file
+cat		 : Canconicate two fles & create 3rd new file, read file.
+cat <file01> -n  : Display text with line numbers
+cat >file01	 : Add/overide but can not edit existing data/text in file 
+cat >>file01     : Append data in file01
+cat f1 f2 >f3	 : Add content of file f1 & f2 and put in file f3
+touch		 : create new file
+nano		 : Crete newfile
+echo <cmd>	 : Print command cmd
+echo <cmd> >f1	 : Put cmd in f1
+rm		 : remove file/folder(unnested)
+rm -r		 : remove recruisive folder & subfolder
+rm -rf		 : Forcefully remove recrusive folder & subfolder
+mv f1 f2	 : Rename file if move to same folder
+mv f1 x/	 : Move file to directoy x
+cp 		 : copy file/dir
+cp -v		 : copy with verbose output  
+cp -r <x>	 : copy recrusive directories.
+date		 : Date
+cal		 : Calendar
+tail -10 <f1>	 : last 10 lines of file f1
+head -10 <f1>	 : First 10 lines of file f1
+df		 : Displays the file system created during installation
+df -hT		 : Display type of filesystem
+du -sh		 : Display ussage of current directory
+grep <pattern>     : match  the pattarn in command output
+grep <pattern> -i  : i > Match pattern bypassing case-Sensitive search
+grep <pattern> -in : n > Display Pattern with  line number
+gerp <pattern> -c  : c > Coooount occurances of pattern 
+grep <pattern> A5  : Grep Pattern and show 5 lines post that
+grep <pattern> B5  : Grep Pattern and show 5 line before that
+
+apt-cache search vi : Search packages with word vi
+
+sed -e 's/abc/def' f1 : replaces "abc" with "def" in file "f1"
+sed -e 's/^$/d' f1    : Delete's empty (^$) lines in file "f1"
+
+awk (print) f1 	      : Print File f1 content.
+awk -F: (print $1 ) f1 : Print 1st column of file "f1" with Field-Deimiter(:)  awk -F: (print $NF) f1 : Print last column of file "f1" with Field-Delimter(:)
+awk -F: (print $1,"--->",$NF) : Print 1st & last column with "--->" in between
