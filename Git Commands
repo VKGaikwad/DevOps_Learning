@@ -1,0 +1,10 @@
+git init                                                    git initiates in local directory
+git add *                                                   git all files staged/traked
+git add file_01                                             git file_01 staged                                             
+git status                                                  shows git files status
+git config --global user.email "abc_01@gmail.com"           git add user mail id
+git config --global user.name "USER_NAME"                   git add user mail id
+git commit -m "message"                                     git save files to local repository
+git commit -am "mesaage"                                    git saves files will alll branches
+git push "repository"                                       git save files to local repository 
+
